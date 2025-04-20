@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cimon738xf8hb"]
+
+[ext_resource type="PackedScene" uid="uid://cue67nae7mj6t" path="res://scenes/kart_player.tscn" id="1_mkvjy"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_mkvjy"]
+
+[sub_resource type="Sky" id="Sky_hd1c1"]
+sky_material = SubResource("ProceduralSkyMaterial_mkvjy")
+
+[sub_resource type="Environment" id="Environment_c7jcs"]
+background_mode = 2
+sky = SubResource("Sky_hd1c1")
+
+[node name="test_scene_1" type="Node3D"]
+
+[node name="KartPlayer" parent="." instance=ExtResource("1_mkvjy")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0462682, 1.88454, 3.63662)
+environment = SubResource("Environment_c7jcs")

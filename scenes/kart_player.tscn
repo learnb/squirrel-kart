@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cue67nae7mj6t"]
+
+[ext_resource type="PackedScene" uid="uid://d31hog7b3op3g" path="res://scenes/go_kart.tscn" id="1_8jkms"]
+[ext_resource type="PackedScene" uid="uid://c2ilt56ri1wpq" path="res://scenes/squirrel.tscn" id="2_qwiyb"]
+
+[node name="KartPlayer" type="Node3D"]
+
+[node name="Go kart" parent="." instance=ExtResource("1_8jkms")]
+
+[node name="Lowpoly Squirrel" parent="Go kart" instance=ExtResource("2_qwiyb")]
+transform = Transform3D(0.333889, 0, 0.942612, 0, 1, 0, -0.942612, 0, 0.333889, -0.224203, 1.0643, 0)

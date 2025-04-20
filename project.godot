@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="SquirrelKart"
+run/main_scene="uid://cimon738xf8hb"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
